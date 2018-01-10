@@ -9,7 +9,10 @@ Holberton School is a project-based alternative to college for the next generati
 .SH OPTIONS
 holberton does not take any options. However, you can supply studentname.
 .SH SEE ALSO
-.I peerlearning(2), projectbased(2), fullstack(2), Betty(1)
+.BR peerlearning(2),
+.BR projectbased(2),
+.BR fullstack(2),
+.BR Betty(1)
 .SH BUGS
 No known bugs.
 .SH AUTHOR
