@@ -1,5 +1,4 @@
 .\" Holberton man page
-.\" Contact mitali.s.auger@gmail.com to correct errors or typos.
 .TH man 2 "04 May 2015" "0.32" "holberton man page"
 .SH NAME
 holberton \- become a full-stack software engineer. 
@@ -10,7 +9,7 @@ Holberton School is a project-based alternative to college for the next generati
 .SH OPTIONS
 holberton does not take any options. However, you can supply studentname.
 .SH SEE ALSO
-peerlearning(2), projectbased(2), fullstack(2), Betty(1)
+.I peerlearning(2), projectbased(2), fullstack(2), Betty(1)
 .SH BUGS
 No known bugs.
 .SH AUTHOR
