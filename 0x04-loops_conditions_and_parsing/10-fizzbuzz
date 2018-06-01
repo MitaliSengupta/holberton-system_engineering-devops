@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Script that displays numbers from 1-100, displays "FizzBuzz" for multiple of 3 & 5, displays "Fizz" for multiple of 3 and displays "Buzz" for multiple of 5 else display number in list format
+for i in {1..100}; do
+      if (( i % 15 == 0 )); then
+      	 echo "FizzBuzz"
+      elif (( i % 3 == 0 )); then
+      	 echo "Fizz"
+      elif (( i % 5 == 0 )); then
+         echo "Buzz"
+      else
+          echo "$i"
+      fi
+done
