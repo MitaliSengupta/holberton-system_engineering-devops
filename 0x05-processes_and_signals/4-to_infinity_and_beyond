@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# script to display "To infinity and beyond" infinitely till interrupted using cltr + c
+while true;
+do
+       echo "To infinity and beyond"
+       sleep 2
+done
