@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Script to display lin containing the bash word, cannot use pgrep
+# shellcheck disable=SC2009
+ps -auxf | grep bash
