@@ -5,7 +5,7 @@ sudo apt-get -y update
 sudo apt-get -y dist-upgrade
 sudo apt-get install haproxy
 
-sed -i "s/ENABLED=0/ENABLED=1/" /etc/default/haproxy
+sudo sed -i "s/ENABLED=0/ENABLED=1/" /etc/default/haproxy
 echo -e "\nlisten appname 0.0.0.0:80\n\tmode http\n\tbalance roundrobin\n\tserver 256-web-01 34.224.71.206:80 check\n\tserver 256-web-02 54.174.221.228:80 check" >> /etc/haproxy/haproxy.cfg
 
-service haproxy restart
+sudo service haproxy restart
