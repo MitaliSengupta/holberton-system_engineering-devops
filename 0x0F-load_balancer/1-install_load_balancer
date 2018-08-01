@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# script to install load balancer HAproxy  1.5 or greater
+sudo apt-get -y update && sudo apt-get -y install haproxy
+sudo sed -i "s/ENABLED=0/ENABLED=1/g" /etc/default/haproxy
+sudo sed -i "\$ a\listen 349-lb-01\n\tbind *:80\n\tmode http\n\tstats enable\n\tbalance roundrobin\n\tserver 349-web-01 35.237.142.70:80 check\n\tserver 349-web-02 35.231.108.250:80 check" /etc/haproxy/haproxy.cfg
+sudo service haproxy start
