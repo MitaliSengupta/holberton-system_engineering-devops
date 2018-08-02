@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# script to run a command as a root
+sudo -u "$1" "whoami"
