@@ -16,6 +16,7 @@
 !includedir /etc/mysql/conf.d/
 !includedir /etc/mysql/mysql.conf.d/
 
+
 [mysqld]
 server-id               = 2
 relay-log               = /var/log/mysql/mysql-relay-bin.log

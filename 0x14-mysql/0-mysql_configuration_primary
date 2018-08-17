@@ -16,7 +16,7 @@
 !includedir /etc/mysql/conf.d/
 !includedir /etc/mysql/mysql.conf.d/
 
-# bind-address          =       35.237.142.70
+# bind-address            = 35.237.142.70
 
 [mysqld]
 server-id               = 1
