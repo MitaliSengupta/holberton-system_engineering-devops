@@ -6,7 +6,7 @@ accessing a url with employee ID to return information
 """
 
 
-def get_list():
+if __name__ == "__main__":
     """
     function to get employees todo list
     progress
@@ -24,7 +24,3 @@ def get_list():
           format(user.get('name'), len(tasks), len(todo)))
     for task in tasks:
         print("\t {}".format(task))
-
-
-if __name__ == "__main__":
-    def get_list()
