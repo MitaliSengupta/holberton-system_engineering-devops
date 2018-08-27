@@ -8,6 +8,10 @@ accessing a url with employee ID to return information
 
 
 if __name__ == "__main__":
+    """
+    function to export the data into
+    csv file
+    """
     ID = argv[1]
     user = requests.get("https://jsonplaceholder.typicode.com/users/{}".
                         format(ID), verify=False).json()
