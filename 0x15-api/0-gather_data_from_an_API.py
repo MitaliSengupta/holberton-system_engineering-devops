@@ -6,12 +6,16 @@ accessing a url with employee ID to return information
 """
 
 
-if __name__ == "__main__":
+def get_list():
+    """
+    function to get employees todo list
+    progress
+    """
     ID = int(argv[1])
     user = requests.get("https://jsonplaceholder.typicode.com/users/{}".
-                        format(ID), verify=False).json()
-    todo = requests.get("https://jsonplaceholder.typicode.com/todos?ID={}".
-                        format(ID), verify=False).json()
+                        format(ID)).json()
+    todo = requests.get("https://jsonplaceholder.typicode.com/todos?userId={}".
+                        format(ID)).json()
     tasks = []
     for task in todo:
         if task.get('completed') is True:
@@ -20,3 +24,7 @@ if __name__ == "__main__":
           format(user.get('name'), len(tasks), len(todo)))
     for task in tasks:
         print("\t {}".format(task))
+
+
+if __name__ == "__main__":
+    def get_list()
