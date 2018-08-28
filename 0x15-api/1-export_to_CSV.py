@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+import csv
 import requests
 from sys import argv
-import csv
 """
 accessing a url with employee ID to return information
 """
@@ -15,7 +15,7 @@ if __name__ == "__main__":
     ID = int(argv[1])
     user = requests.get("https://jsonplaceholder.typicode.com/users/{}".
                         format(ID)).json()
-    todo = requests.get("https://jsonplaceholder.typicode.com/users/{}/todos".
+    todo = requests.get("https://jsonplaceholder.typicode.com/todos?userId={}".
                         format(ID)).json()
     with open("{}.csv".format(ID), 'w') as csvf:
         filler = csv.writer(csvf, delimiter=',', quoting=csv.QUOTE_ALL)
