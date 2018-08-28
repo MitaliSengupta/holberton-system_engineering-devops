@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+import json
 import requests
 from sys import argv
-import json
 """
 accessing a url with employee ID to return information
 """
@@ -9,7 +9,7 @@ accessing a url with employee ID to return information
 
 if __name__ == "__main__":
     users = requests.get("https://jsonplaceholder.typicode.com/users",
-                        verify=False).json()
+                         verify=False).json()
     todo = requests.get("https://jsonplaceholder.typicode.com/todos",
                         verify=False).json()
     user_dict = {}
