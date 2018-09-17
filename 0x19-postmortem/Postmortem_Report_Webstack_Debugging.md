@@ -23,8 +23,8 @@ On September 11th, 2018 at midnight the server access went down resulting in 504
 - **00:30 PST** - Checking php.ini settings revealed all error logging had been turned off. Turning the error logging on.
 - **00:32 PST** - Restarting apache server and going to the error logs to check what is being logged into the php error logs.
 - **00:36 PST** - Reviewing error logs for php revealed a mistyped file name which was resulting in incorrect loading and premature closing of apache.
-- **00:38** - Fixing file name and restarting Apache server.
-- **00:40** - Server is now running normally and the website is loading properly.
+- **00:38 PST** - Fixing file name and restarting Apache server.
+- **00:40 PST** - Server is now running normally and the website is loading properly.
 
 
 #### Root Cause and Resolution
