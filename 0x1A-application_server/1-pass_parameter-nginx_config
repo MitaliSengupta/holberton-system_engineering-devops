@@ -47,7 +47,7 @@ location /airbnb-onepage/ {
 
 location /airbnb-dynamic/ {
          include proxy_params;
-         proxy_pass http://127.0.0.1:8001/;
+         proxy_pass http://127.0.0.1:8001/number_odd_or_even/;
 }
 
 location /hbnb_static {
