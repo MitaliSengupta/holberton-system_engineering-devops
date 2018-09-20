@@ -1,5 +1,5 @@
-# Starting gunicorn
-description "Gunicorn application server running airbnb-onepage"
+# Pass a query gunicorn
+description "Gunicorn application server running 6-number_odd_or_even"
 
 start on runlevel [2345]
 stop on runlevel [!2345]
@@ -8,5 +8,5 @@ respawn
 setuid ubuntu
 setgid www-data
 
-chdir /home/ubuntu/AirBnB_clone_v2
-exec gunicorn --workers 3 --bind 127.0.0.1:8001 web_flask.6-number_odd_or_even:app
+chdir /home/ubuntu/AirBnB_clone_v2/web_flask
+exec gunicorn --workers 3 --bind localhost:8001 6-number_odd_or_even:app
